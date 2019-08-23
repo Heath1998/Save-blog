@@ -1,7 +1,7 @@
-#学习【vue(前端)+express(后端)+monggodb(数据库)】登录注册系统学习笔记
+# 学习【vue(前端)+express(后端)+monggodb(数据库)】登录注册系统学习笔记
 
 -----
-##vue前端注意事项
+## vue前端注意事项
 1.记得加入路由守卫。  
 在需要密码才能进入的路由上加上requireAuth属性
 
@@ -87,7 +87,7 @@ axios拦截响应
 	}
 	}
 
-##express注意事项
+## express注意事项
 1.使用token  
 引入const jwt = require('jsonwebtoken')  
 创造token
@@ -119,7 +119,7 @@ axios拦截响应
 
 2。之后就是通过router写api接口给前端调用，这一部分较简单就不演示了。
 
-##数据库mongondb
+## 数据库mongondb
 
 	// mongodb 连接🔗
 	mongoose.connect(config.mongodb, { useNewUrlParser: true })
