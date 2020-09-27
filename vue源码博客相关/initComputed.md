@@ -6,4 +6,4 @@
 
 defineComputed()先在sharedPropertyDefinition上添加get和set方法。主要讲get，当执行createComputed时会返回一个函数，之后用Object.defineProperty双向数据绑定。
 
-这样当你访问计算属性时就会触发get方法，如果dirty为true就去获取数据，否则就直接返回value。如果依赖改变的话会触发evaluate方法
+这样当你访问计算属性时就会触发get方法，如果dirty为true就去获取数据，否则就直接返回value。如果依赖改变的话会触发evaluate方法，evaluate会触发watcher.get方法去摸一下进行依赖收集。

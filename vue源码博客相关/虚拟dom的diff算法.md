@@ -52,6 +52,7 @@ oldChildern的最后一个节点oldEndVnode和newChildern的第一个节点oldSt
 将这个vnode插入到oldStartVnode.elm的前边，把newStartVnode设置为下一个节点，
 
 如果存在，sameVnode比较vnode.key找出的和newStartvnode比较，如果值得比较
-pacthVnode两者，oldChildern[index]位置设为undefined，同时把newStartVnode.elm的位置移到oldStartVnode.elm的前面，同时newStartVnode向后移一位。
+pacthVnode两者，同时把oldChildern[index].elm的位置移到oldStartVnode.elm的前面，oldChildern[index]位置设为undefined，同时newStartVnode向后移一位。   
+
 如果不值得比较key值又相同，可能tag不同，此时创建一个新节点crateElm并把
 newStartVnode向后移一位。
