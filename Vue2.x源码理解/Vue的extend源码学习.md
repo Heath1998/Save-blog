@@ -3,7 +3,7 @@
 ### extend主要作用
 
 ```javascript
-Vue.extend = function () {
+Vue.extend = function (extendOptions) {
   const Super = this
   const Sub = function VueComponent (options) {
       this._init(options)
@@ -36,6 +36,12 @@ Vue.options  内容为
 	_base:只有合并过的选项会带有_base属性
 }
 ```
+
+
+
+
+
+其实就是将传入的组件options转换为一个子构造函数，通过mergeOptions，生成Vue的子类，
 
 
 

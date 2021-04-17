@@ -2,7 +2,11 @@
 
 
 
+> 就是调用了Vue.extend（）并将组件注册到全局。
+
 ### Vue.component的注册
+
+
 
 
 
