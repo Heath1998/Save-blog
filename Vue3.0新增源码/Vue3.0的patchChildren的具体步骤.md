@@ -330,3 +330,7 @@
 如果`if`为`newIndexToOldIndexMap[i] === 0`执行patch(null, nextChild)进行创建新节点，传入anchor锚插入点。         
 
 `else if (moved)`如果移动为`true`，判断当前`increasingNewIndexSequence`最长增长序列的j下标的值，是否与当前i相等，即`newIndexToOldIndexMap`遍历到的位置。如果j<0时或者不相等时，执行move移动函数，否则就不需要移动直接j--，继续for。
+
+
+
+move是获取后面newChildren的下一个的位置插入inserBefore的。
